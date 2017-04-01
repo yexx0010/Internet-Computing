@@ -1,0 +1,65 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+ 
+function newUser()
+{
+	var x=document.forms["myForm"]["email"].value;
+	var atpos=x.indexOf("@");
+	var dotpos=x.lastIndexOf(".");
+	if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+	  {
+		  alert("Not a valid e-mail address");
+		  return false;
+	  }
+	else{	
+		var user = document.getElementById("new_user").value;
+		var pw = document.getElementById('new_pw').value;
+		var pw2 = document.getElementById('new_pw2').value;
+		
+		if(pw == pw2){
+			$.ajax({
+			type: "GET",
+			url: "new_user.php",
+			cache: false,
+			dataType: "json",
+			data:  {user:user, pw:pw}
+
+			}).done(function( data) {
+				
+				$("#divUserInfo").html(data.message);
+			});
+		}
+		else{
+			alert("Incorrect password!");
+		
+		}
+	}
+}
+
+	
+
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<body>
+  <section class="container">
+    <div class="login">
+      <h1>Register</h1>
+        <p><input type="text" id="new_user" value="" size="20" placeholder="Username"></p>
+        <p><input type="password" id="new_pw" value="" size="20"  placeholder="Password"></p>
+		<p> <input type="password" id="new_pw2" value="" size="20" placeholder="Confirm Password"></p>
+		<form name="myForm" method="get">
+			<p><input type="text" id="email" value="" size="20"placeholder="Email"></p>
+		</form>
+		<p class="submit"><input type="submit" name="commit" value="Register" onclick="newUser()"></p>
+      </form>
+    </div>
+	<div id="divUserInfo"></div>
+
+</body>
+</html>
+

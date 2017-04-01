@@ -1,0 +1,81 @@
+h6 {color:white; font-size:18pt; text-align:center; 
+		font-family:arial,sans-serif}
+	.menu {color:white; font-size:12pt; text-align:middle; 
+		   font-family:arial,sans-serif; font-weight:bold}
+	p {color:black; font-size:12pt; text-align:justify; font-family:arial,sans-serif}
+	p.foot {color:white; font-size:6pt; text-align:left; 
+			font-family:arial,sans-serif; font-weight:bold}
+	p.title {color:white; font-size:10pt; text-align:center; 
+			font-family:arial,sans-serif; font-weight:bold} 
+	p.title_big {color:white; font-size:12pt; text-align:center; 
+			font-family:arial,sans-serif; font-weight:bold}
+	p.counter {color:white; font-size:8pt; text-align:right; 
+			font-family:arial,sans-serif; font-weight:bold}
+	a {text-decoration:none;color:blue;}
+	a:hover {background-color:#888888;color:white}
+
+	html{height:100%}
+	body{height:100%; font-family:sans-serif;font-size: 12pt; background-color: white; margin:1; margin:0pt;}
+
+	#container {width: 100%;
+	height: 100%;	
+	margin: 0 auto;  
+	}
+
+	#content {
+		height: 100%;
+		overflow: hidden;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+		
+	   footer {
+		width: 100%;
+		background: #56BAEC;
+		height: 25px;
+		//display: table;
+	   }
+	   
+	   body {background-image:url('bg1.jpg');}
+
+	   footer p {
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: 5px;
+		padding-top: 0px;
+		color: white;
+		font-size: 11pt;
+	   }
+		  
+		#announcement {
+			margin-left: 0px; 
+			margin-right: 0px;
+			padding-left: 10px; 
+			padding-right: 30px; 
+			//float: left;
+			overflow: auto;
+			width: 100%;
+			height: 100%;
+			font-family: Times New Roman;
+			font-size: 12pt;
+		}
+		#announcement p{font-family: Times New Roman; font-size: 12pt;  margin-right: 10px;}
+		#announcement table{font-family: Times New Roman;font-size: 12pt;}
+		#announcement ol{font-family: Times New Roman;font-size: 12pt; margin-left: -10px; margin-right: 10px;}
+
+		#outline {margin-left: 10px; margin-right: 10px; font-family: Times New Roman;}
+		#outline p{font-family: Times New Roman;}
+		#outline table{font-family: Times New Roman;font-size: 12pt;}
+		#outline ol{font-family: Times New Roman;font-size: 12pt; margin-left: 15px; }
+		#outline ul{font-family: Times New Roman;font-size: 12pt; margin-left: 15px; }  
+		
+		
+		#schedule {margin-left: 5px; margin-right: 5px; font-family: Times New Roman;}
+		#schedule p{font-family: Times New Roman;}
+		#schedule table{font-family: Times New Roman;font-size: 11pt; width: 100%; border:1; cellpadding:0; cellspacing:1; }	
+			
+		.cell1 {text-align: center; padding: 2px; background-color: black; color: white; font-size: 11pt;}
+		.cell2 {text-align: center; padding: 2px; background-color: #808080; color: #ffffff; font-size: 9pt;}
+		.cell3 {align: center; bgcolor: 000000;}	
